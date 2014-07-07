@@ -32,5 +32,9 @@ describe "A citizen of Rome" do
       expect(roman.translate(10)).to eq "X"
     end
 
+    it "replies properly to eleven" do
+      expect(roman.translate(11)).to eq "XI"
+    end
+
 	end	
 end
