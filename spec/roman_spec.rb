@@ -34,6 +34,8 @@ describe "A citizen of Rome" do
 
     it "replies properly to eleven" do
       expect(roman.translate(11)).to eq "XI"
+      expect(roman.translate(14)).to eq "XIV"
+      expect(roman.translate(19)).to eq "XIX"
     end
 
 	end	
