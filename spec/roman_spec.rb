@@ -2,14 +2,10 @@ require './roman'
 
 describe "A citizen of Rome" do
 	context 'When asked to translate an arabic numeral' do
-		it "replies 'I' to 1" do
+		it "replies properly till three" do
 			expect(Roman.translate(1)).to eq "I"
-		end
-    it "replies 'II' to 2" do
       expect(Roman.translate(2)).to eq "II"
-    end
-    it "replies 'III' to 3" do
       expect(Roman.translate(3)).to eq "III"
-    end
+		end
 	end	
 end
