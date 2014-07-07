@@ -2,7 +2,7 @@ class Roman
   UNIT="I"
   FIVE="V"
   TEN="X"
-  SPECIAL_CASES = {4 => UNIT+FIVE, 9 => UNIT+TEN}
+  SPECIAL_CASES = {4 => UNIT+FIVE, 9 => UNIT+TEN, 10 => TEN}
 
   def translate arabic
     special_case = SPECIAL_CASES[arabic] 
