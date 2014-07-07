@@ -15,5 +15,9 @@ describe "A citizen of Rome" do
     it "replies properly to five" do
       expect(Roman.translate(5)).to eq "V"
     end
+
+    it "replies properly to six" do
+      expect(Roman.translate(6)).to eq "VI"
+    end
 	end	
 end
