@@ -4,29 +4,13 @@ describe "A citizen of Rome" do
 	context 'When asked to translate an arabic numeral' do
     roman = Roman.new
 
-		it "replies properly till three" do
+		it "replies properly the units" do
 			expect(roman.translate(1)).to eq "I"
-      expect(roman.translate(2)).to eq "II"
-      expect(roman.translate(3)).to eq "III"
-		end
-
-    it "replies properly to four" do
       expect(roman.translate(4)).to eq "IV"
-    end
-
-    it "replies properly to five" do
       expect(roman.translate(5)).to eq "V"
-    end
-
-    it "replies properly from six to eight" do
-      expect(roman.translate(6)).to eq "VI"
       expect(roman.translate(7)).to eq "VII"
-      expect(roman.translate(8)).to eq "VIII"
-    end
-
-    it "replies properly to nine" do
       expect(roman.translate(9)).to eq "IX"
-    end
+		end
 
     it "replies properly to ten" do
       expect(roman.translate(10)).to eq "X"
@@ -37,6 +21,7 @@ describe "A citizen of Rome" do
       expect(roman.translate(14)).to eq "XIV"
       expect(roman.translate(19)).to eq "XIX"
     end
+
 
 	end	
 end
