@@ -1,10 +1,12 @@
 class Roman
   UNIT="I"
   FIVE="V"
-  SPECIAL_CASE=4
+  TEN="X"
+  SPECIAL_CASES = {4 => UNIT+FIVE, 9 => UNIT+TEN}
 
   def translate arabic
-    return UNIT+FIVE if arabic == SPECIAL_CASE
+    special_case = SPECIAL_CASES[arabic] 
+    return special_case unless special_case.nil?
     
     @resto = arabic
     result = "" + reply_five_if_needed
