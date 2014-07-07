@@ -24,5 +24,9 @@ describe "A citizen of Rome" do
       expect(roman.translate(8)).to eq "VIII"
     end
 
+    it "replies properly to nine" do
+      expect(roman.translate(9)).to eq "IX"
+    end
+
 	end	
 end
