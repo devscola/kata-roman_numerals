@@ -9,7 +9,9 @@ class Roman
     return special_case unless special_case.nil?
     
     @resto = arabic
-    result = "" + reply_five_if_needed
+
+    result = "" + reply_ten_if_needed
+    result += reply_five_if_needed
     result += UNIT * @resto
   end
   
@@ -17,6 +19,12 @@ class Roman
     return "" if @resto < 5
     @resto = @resto - 5
     FIVE
+  end
+
+  def reply_ten_if_needed
+    return "" if @resto < 10
+    @resto = @resto - 10
+    TEN
   end
 
 end
