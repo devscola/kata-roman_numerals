@@ -18,8 +18,11 @@ describe "A citizen of Rome" do
       expect(roman.translate(5)).to eq "V"
     end
 
-    it "replies properly to six" do
+    it "replies properly from six to eight" do
       expect(roman.translate(6)).to eq "VI"
+      expect(roman.translate(7)).to eq "VII"
+      expect(roman.translate(8)).to eq "VIII"
     end
+
 	end	
 end
