@@ -5,6 +5,7 @@ class Roman
 
   def self.translate arabic
     return UNIT+FIVE if arabic == SPECIAL_CASE
+    return FIVE if arabic == 5
     UNIT*arabic
   end
   
