@@ -7,5 +7,8 @@ describe "A citizen of Rome" do
       expect(Roman.translate(2)).to eq "II"
       expect(Roman.translate(3)).to eq "III"
 		end
+    it "replies properly to four" do
+      expect(Roman.translate(4)).to eq "IV"
+    end
 	end	
 end
